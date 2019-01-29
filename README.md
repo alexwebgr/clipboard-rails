@@ -1,4 +1,4 @@
-# clipboard-rails
+# aw-clipboard-rails
 [![Gem Version](https://badge.fury.io/rb/aw-clipboard-rails.svg)](http://badge.fury.io/rb/aw-clipboard-rails)
 
 aw-clipboard-rails gem is a wrapper gem for clipboard.js javascript library for your Rails 5 applications.
@@ -35,97 +35,10 @@ Now you need to edit your `app/assets/javascripts/application.js` file and add t
 
 Here is the example working code to test with your Rails application.
 
-Add this sample code to your `app/assets/javascripts/application.js` file
-
-``` javascript
-$(document).ready(function(){  
-  
-  var clipboard = new Clipboard('.clipboard-btn');
-  console.log(clipboard);
-	
-});
-```
-
-*Note:* Here i am using `gem 'jquery-turbolinks'` for using the jquery $(document).ready function 
-
-Add this sample code to your template file like `index.html.erb`
-
-``` html
-<!-- Target -->
-<textarea id="bar">Mussum ipsum cacilds...</textarea>
-
-<!-- Trigger -->
-<button class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#bar">
-    Copy to clipboard
-</button>
-```
-## Additional information
-
-Additionally, you can define a **data-clipboard-action** attribute to specify if you want to either **copy** or **cut** content.
-
-If you omit this attribute, **copy** will be used by default.
 
 ## Full documentation 
 
 Read the clipboard.js documentation here http://zenorocha.github.io/clipboard.js/ for full usage information.
-
-
-## Add Tooltips + Highlight animation: 
-
-Add Tooltips + Highlight animation with Clipboard.js on button click using Bootstrap Tooltip
-
-``` javascript
-
-// Tooltip
-
-$('.clipboard-btn').tooltip({
-  trigger: 'click',
-  placement: 'bottom'
-});
-
-function setTooltip(btn, message) {
-  $(btn).tooltip('show')
-    .attr('data-original-title', message)
-    .tooltip('show');
-}
-
-function hideTooltip(btn) {
-  setTimeout(function() {
-    $(btn).tooltip('hide');
-  }, 1000);
-}
-
-// Clipboard
-
-var clipboard = new Clipboard('.clipboard-btn');
-
-clipboard.on('success', function(e) {
-  setTooltip(e.trigger, 'Copied!');
-  hideTooltip(e.trigger);
-});
-
-clipboard.on('error', function(e) {
-  setTooltip(e.trigger, 'Failed!');
-  hideTooltip(e.trigger);
-});
-```
-
-``` html
-<!-- Example 1: Animation with single button HTML source-->
-<button class="clipboard-btn btn btn-primary" data-clipboard-text="It worked!">Click me</button>
-
-```
-
-``` html
-<!-- Example 2: with Target source -->
-<textarea id="bar">Mussum ipsum cacilds...</textarea>
-
-<!-- Trigger -->
-<button class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#bar">
-    Copy to clipboard
-</button>
-```
-
 
 
 ## Development

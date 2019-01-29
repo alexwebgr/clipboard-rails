@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["email@alex-web.gr"]
 
   spec.summary       = spec.description
-  spec.description   = 'This gem provides the clipboard.js Javascript library for your Rails 4 and Rails 5 application.'
+  spec.description   = 'This gem provides the clipboard.js Javascript library for your Rails 5 application.'
   spec.homepage      = 'https://github.com/alexwebgr/clipboard-rails'
   spec.license       = "MIT"
 
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '>= 2.5.0'
-  spec.add_development_dependency "bundler", "~> 1.11"
+  spec.required_ruby_version = '>= 2.5.1'
+  spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 12.0"
 end
