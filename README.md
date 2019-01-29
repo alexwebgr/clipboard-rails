@@ -1,19 +1,19 @@
 # clipboard-rails
-[![Gem Version](https://badge.fury.io/rb/clipboard-rails.svg)](http://badge.fury.io/rb/clipboard-rails)
+[![Gem Version](https://badge.fury.io/rb/aw-clipboard-rails.svg)](http://badge.fury.io/rb/aw-clipboard-rails)
 
-clipboard-rails gem is the integration of clipboard.js javascript library for your Rails 4 and Rails 5 applications.
+aw-clipboard-rails gem is a wrapper gem for clipboard.js javascript library for your Rails 5 applications.
 
 clipboard.js is a modern approach to copy text to clipboard No Flash. No dependencies. Just 2kb
 source: https://github.com/zenorocha/clipboard.js
 
-Ruby gems url: https://rubygems.org/gems/clipboard-rails
+Ruby gems url: https://rubygems.org/gems/aw-clipboard-rails
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'clipboard-rails'
+gem 'aw-clipboard-rails'
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install clipboard-rails
+    $ gem install aw-clipboard-rails
 
 Note: After adding the gem to your gem file and running the bundle, restart rails server.
 
@@ -136,7 +136,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/sadiqmmm/clipboard-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/alexwebgr/clipboard-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

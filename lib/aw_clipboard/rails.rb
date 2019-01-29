@@ -1,6 +1,6 @@
-require "clipboard/rails/version"
+require "aw_clipboard/rails/version"
 
-module Clipboard
+module AwClipboard
   module Rails
     class Engine < ::Rails::Engine; end
   end
